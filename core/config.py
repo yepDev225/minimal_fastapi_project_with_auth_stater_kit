@@ -4,7 +4,7 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "My SaaS API"
     API_V1_STR: str = "/api/v1"
     DATABASE_TYPE: str = "sqlite"
-    DATABASE_URI: str
+    DATABASE_URI: str = "sqlite:///./data.db"
     SECRET_KEY: str = "mysec"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     ALGORITHM: str = "HS256"
